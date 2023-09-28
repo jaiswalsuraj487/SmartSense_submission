@@ -2,6 +2,18 @@
 1. Problem Statement:
 ● Train a model for predicting which food establishments are at most risk for the types of
 violations most likely to spread food-borne illness.
+
+Steps:
+1. I found InspectionData-scraped folder relevent from given data files and used yelp_data.csv and mapping.csv from InspectionData-scraped folder to interpret the problem statement.
+2. Merged `yelp_data.csv` and `mapping.csv` on `permitid`
+3. Selected permit_id	rating	crit_viol	crit_viol_cos	crit_viol_rpt	crit_viol_tbr features for my task
+4. As the data is not labled i used k-means clustering algorithm
+5. I found the optimal k using the elbow method and selected k= 4
+6. Saw spread across various pairs of featureaand Based on that selected ('crit_viol', 'crit_viol_cos') to make decision for selection of cluster which show high crit_viol and crit_viol_cos to find which food establishments are at most risk
+7. Took the indexes and returned the permit id to identify them.
+
+#################################################################
+# Given Readme file
 # Data Sets Overview
 
 ### Health inspection results
