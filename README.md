@@ -12,6 +12,8 @@ Steps:
 6. Saw spread across various pairs of featureaand Based on that selected ('crit_viol', 'crit_viol_cos') to make decision for selection of cluster which show high crit_viol and crit_viol_cos to find which food establishments are at most risk
 7. Took the indexes and returned the permit id to identify them.
 
+I have implemented in both .py file and .ipynb file. `subimission.ipynb` file is more visually appealing. Please consider both incase of any error while executing.
+
 #################################################################
 # Given Readme file
 # Data Sets Overview
